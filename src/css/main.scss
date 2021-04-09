@@ -8,7 +8,7 @@
 
 @import "main-settings";
 
- 
+
 /* pswp = photoswipe */
 .pswp {
 	display: none;
@@ -31,7 +31,7 @@
 			box-sizing: border-box;
 		}
 	}
-	
+
 	img {
 		max-width: none;
 	}
@@ -59,6 +59,7 @@
 
 .pswp--zoomed-in .pswp__img {
 	/* autoprefixer: off */
+	cursor: move; // fallback if grabbing cursor is unsupported
 	cursor: -webkit-grab;
 	cursor: -moz-grab;
 	cursor: grab;
@@ -66,6 +67,7 @@
 
 .pswp--dragging  .pswp__img {
 	/* autoprefixer: off */
+	cursor: move; // fallback if grabbing cursor is unsupported
 	cursor: -webkit-grabbing;
 	cursor: -moz-grabbing;
 	cursor: grabbing;
@@ -99,7 +101,7 @@
 
 .pswp__container,
 .pswp__zoom-wrap {
-	-ms-touch-action: none; 
+	-ms-touch-action: none;
 	touch-action: none;
 	position: absolute;
 	left: 0;
